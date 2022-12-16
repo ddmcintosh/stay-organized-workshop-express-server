@@ -83,7 +83,10 @@
                     <form>
                         <div class="mb-3">
                             <label for="box1" class="form-label">Urgency</label>
-                            <select>
+                            <select class="form-select text-center mt-5" id="userSelect"></select>
+                            <select class="form-select text-center mt-5" id="categorySelect"></select>
+                            <select class="form-select text-center mt-5" id="urgencySelect">
+                                <option value="">Please Select Priority Level</option>
                                 <option value="usernames">Low</option>
                                 <option value="usernames">Medium</option>
                                 <option value="usernames">High</option>
@@ -95,15 +98,17 @@
 
             <div class="row">
                 <div class="col">
-                    <div id="divResults">
-                    </div>
+                    <textarea class="description mt-5 " name="" id="description" cols="80" rows="5"></textarea><br>
+
+                    <label for="text">Deadline:</label>
+                    <input class="input mt-5" type="date" name="" id="inputField"> <br>
+                    <hr>
+                    <button id="addBtn" class="btn btn-success mt-5 ">ADD Todo</button>
+                    <p id="display"></p>
                 </div>
             </div>
         </div>
     </main>
-
-
-
 
 
 
@@ -115,6 +120,7 @@
             integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
             crossorigin="anonymous"></script>
 
+        <script src="scripts/new_todo.js"></script>
     </footer>
 </body>
 
